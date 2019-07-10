@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgpic"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/headingTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="HIKER'S WATCH"
+        android:textColor="#000"
+        android:textSize="40sp"
+        app:fontFamily="@font/cairo_semibold" />
+
+    <TextView
+        android:id="@+id/latitudeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="150dp"
+        android:text="Latitude : "
+        app:fontFamily="@font/aldrich" />
+
+    <TextView
+        android:id="@+id/longitudeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/latitudeTextView"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:text="Longitude : "
+        app:fontFamily="@font/aldrich" />
+
+    <TextView
+        android:id="@+id/accuracyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/longitudeTextView"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:text="Accuracy : "
+        app:fontFamily="@font/aldrich" />
+
+    <TextView
+        android:id="@+id/altitudeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/accuracyTextView"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:text="Altitude : "
+        app:fontFamily="@font/aldrich" />
+
+    <TextView
+        android:id="@+id/addressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/altitudeTextView"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:text="Address : "
+        app:fontFamily="@font/aldrich" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_below="@id/addressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="get location" />
+
+
+</RelativeLayout>
